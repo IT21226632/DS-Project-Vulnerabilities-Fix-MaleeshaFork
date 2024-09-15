@@ -1,0 +1,138 @@
+.course-management-page-container {
+	width: 100%;
+	min-height: 100svh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 30px;
+}
+
+.course-display-container {
+	width: 100%;
+	max-width: 1100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.partition-heading {
+	align-self: flex-start;
+	font-family: var(--font-family-one);
+	font-weight: 600;
+	font-size: 1.5em;
+	color: var(--secondary-color);
+	position: relative;
+}
+
+.partition-heading::after {
+	content: " ";
+	position: absolute;
+	width: 60%;
+	height: 4px;
+	top: 35px;
+	left: 0;
+	border-radius: 2px;
+	background-color: var(--primary-color);
+}
+
+.course-lister-partition {
+	width: 100%;
+	min-height: 100px;
+	padding: 10px 0;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.course-listing-table {
+	width: 100%;
+	margin-top: 20px;
+	border-collapse: collapse;
+}
+
+.course-listing-data-row-head {
+	width: 100%;
+	background-color: var(--primary-color);
+	font-family: var(--font-family-one);
+	font-size: 1.1em;
+	color: var(--secondary-color);
+}
+
+.course-listing-data-row:nth-child(odd) {
+	background-color: #f1f2f6;
+}
+
+.course-listing-data-row:nth-child(even) {
+	background-color: #d2dae2;
+}
+
+.label-head {
+	max-width: 300px;
+	padding: 10px;
+	color: var(--secondary-color);
+}
+
+.label-data {
+	font-size: 0.9em;
+	font-family: var(--font-family-one);
+	color: var(--secondary-color);
+	text-align: center;
+	padding: 10px;
+	font-weight: 500;
+}
+
+.course {
+	text-align: left;
+}
+
+.course-badge {
+	padding: 4px 10px;
+	border-radius: 5px;
+	width: 180px;
+}
+
+.approve {
+	background-color: rgb(77, 184, 77);
+	color: white;
+}
+
+.pending {
+	background-color: #ffa801;
+	color: white;
+}
+
+.option-btn {
+	width: 100px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.option-btn-approve{
+    background-color: white;
+	color: green;
+	border: 2px solid green;
+}
+
+.option-btn-deny:hover{
+    background-color: red;
+	color: white;
+}
+
+.option-btn-approve:hover{
+    background-color: green;
+	color: white;
+}
+
+.option-btn-deny{
+    background-color: white;
+	color: red;
+	border: 2px solid red;
+}
+
+.option-btn:hover {
+	cursor: pointer;
+}

@@ -1,0 +1,101 @@
+.inquiry-info-page-container {
+	width: 100%;
+	min-height: 100svh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	background-color: #f5f5f5;
+}
+
+.inquiry-card {
+	width: 600px;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.partition-heading {
+	align-self: flex-start;
+	font-family: var(--font-family-one);
+	font-weight: 600;
+	font-size: 1.5em;
+	color: var(--secondary-color);
+	position: relative;
+}
+
+.inquiry-details p {
+	font-family: var(--font-family-one);
+	font-size: 16px;
+	color: var(--secondary-color);
+	margin-bottom: 10px;
+	word-break: break-word;
+}
+
+.label {
+	font-weight: 600;
+	color: var(--ternary-color);
+	font-family: var(--font-family-one);
+}
+
+.status-badge {
+	display: inline-block;
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.pending-status {
+	background-color: #ffc107;
+	color: #333;
+}
+
+.resolved-status {
+	background-color: var(--ternary-color);
+	color: #fff;
+}
+
+.response-container {
+	margin-top: 20px;
+}
+
+.response-textarea {
+	width: 100%;
+	height: 150px;
+	padding: 10px;
+	border: 1px solid var(--accent-color-one);
+	border-radius: 4px;
+	font-family: var(--font-family-one);
+	font-size: 14px;
+	resize: none;
+}
+
+.response-textarea:focus {
+	outline: none;
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 3px rgba(146, 227, 169, 0.3);
+}
+
+.send-btn {
+	background-color: var(--ternary-color);
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	padding: 10px 20px;
+	font-family: var(--font-family-one);
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-top: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.send-btn:hover {
+	background-color: var(--reserve-color);
+}

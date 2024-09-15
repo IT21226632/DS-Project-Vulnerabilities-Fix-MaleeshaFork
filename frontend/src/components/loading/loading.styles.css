@@ -1,0 +1,21 @@
+.loading-container {
+	width: 100%;
+	height: 80vh;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.loading-image {
+	width: 300px;
+	margin-top: 20px;
+}
+
+.screen-phrase {
+	font-family: var(--font-family-one);
+	font-size: 1.2em;
+	font-weight: 600;
+	color: var(--secondary-color);
+}

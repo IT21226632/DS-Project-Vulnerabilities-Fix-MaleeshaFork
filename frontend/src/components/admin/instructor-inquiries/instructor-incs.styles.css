@@ -1,0 +1,134 @@
+.instructor-inqs-page-container {
+	width: 100%;
+	min-height: 100svh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 30px;
+	margin-left: 150px;
+}
+
+.partition-heading {
+	align-self: flex-start;
+	font-family: var(--font-family-one);
+	font-weight: 600;
+	font-size: 1.5em;
+	color: var(--secondary-color);
+	position: relative;
+}
+
+.inquiry-display-container {
+	margin-top: 30px;
+	display: flex;
+	width: 100%;
+	height: 40px;
+}
+
+.instructor-inqs-partition-canvas {
+	width: 100%;
+	height: 550px;
+	max-width: 1200px;
+	padding: 10px 0;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 20px;
+	background-color: #f5f5f5;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-left: 20px;
+	overflow-y: auto;
+}
+
+.instructor-inqs-partition-canvas > table {
+	width: 100%;
+	border-collapse: collapse;
+	font-family: var(--font-family-one);
+}
+
+.instructor-inqs-partition-canvas > table > tr > th,
+.instructor-inqs-partition-canvas > table > tr > td {
+	text-align: center;
+	padding: 15px;
+}
+
+.instructor-inqs-partition-canvas > table > thead > tr > th {
+	padding: 10px;
+	background-color: var(--secondary-color);
+	color: white;
+	font-family: var(--font-family-one);
+	font-weight: 400;
+	font-size: 1.1em;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.instructor-inqs-partition-canvas > table > tbody > tr {
+	font-family: var(--font-family-one);
+	border-bottom: 1px solid grey;
+}
+
+.instructor-inqs-partition-canvas > table > tr > th:nth-child(2) {
+	width: 350px;
+}
+
+.instructor-inqs-status-badge {
+	width: 100px;
+	height: 30px;
+	padding: 8px 10px;
+	border-radius: 15px;
+	text-transform: capitalize;
+	display: inline-block;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.pending-msg {
+	background-color: #ffc107;
+	color: #333;
+}
+
+.resolved-msg {
+	background-color: var(--ternary-color);
+	color: #fff;
+}
+
+.instructor-inqs-partition-canvas td {
+	border-bottom: 1px solid var(--accent-color-one);
+	padding: 12px;
+}
+
+.instructor-inqs-partition-canvas tr:last-child td {
+	border-bottom: none;
+}
+
+.instructor-inqs-partition-canvas td:nth-child(3) {
+	text-align: center;
+}
+
+.instructor-inqs-partition-canvas td:last-child {
+	text-align: center;
+}
+
+.instructor-inqs-partition-canvas td:last-child button {
+	background-color: transparent;
+	border: 1px solid var(--ternary-color);
+	color: var(--ternary-color);
+	padding: 6px 12px;
+	border-radius: 4px;
+	font-family: var(--font-family-one);
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.instructor-inqs-partition-canvas td:last-child button:hover {
+	background-color: var(--ternary-color);
+	color: #fff;
+}
