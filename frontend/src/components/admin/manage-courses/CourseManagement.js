@@ -72,7 +72,8 @@ function CourseManagement() {
 							</tr>
 							{courses.map((course) => {
 								return (
-									<tr className="course-listing-data-row">
+									
+									<tr className="course-listing-data-row" key={course._id}>
 										<td className="label-data">
 											{course.courseId}
 										</td>
