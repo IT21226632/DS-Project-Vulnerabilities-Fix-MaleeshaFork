@@ -116,9 +116,9 @@ function PurchasedCourse() {
           </div>
           <div className="view-content-details-con-2-contents">
             {courseContents.map((content, index) => (
-              <div className="view-content-list">
+              <div className="view-content-list" key={content.id || index}>
                 <div className="view-content-list-item">
-                  <div className="view-content-list-item-image"  key={content.id || index}>
+                  <div className="view-content-list-item-image" >
                     <iframe
                       style={{ width: "100%", height: "100%" }}
                       src={`https://www.youtube.com/embed/${getYouTubeVideoId(
