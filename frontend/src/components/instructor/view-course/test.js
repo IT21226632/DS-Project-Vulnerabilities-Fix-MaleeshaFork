@@ -125,7 +125,7 @@ function ViewCourse() {
                                     style={{ width: '100%', height: '100%' }}
                                     src={`https://www.youtube.com/embed/${getYouTubeVideoId(content.lectureVideo)}`}
                                     allowFullScreen
-                                    sandbox="allow-scripts allow-same-origin allow-presentation"
+                                    sandbox=""
                                 ></iframe>
                                 </div>
                                 <div className='view-content-list-item-details'>

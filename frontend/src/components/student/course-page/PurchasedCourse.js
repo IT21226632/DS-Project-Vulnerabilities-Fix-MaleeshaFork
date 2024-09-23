@@ -125,7 +125,7 @@ function PurchasedCourse() {
                         content.lectureVideo
                       )}`}
                       allowFullScreen
-                      sandbox="allow-scripts allow-same-origin allow-presentation"
+                      sandbox=""
                     ></iframe>
                   </div>
                   <div className="view-content-list-item-details">
