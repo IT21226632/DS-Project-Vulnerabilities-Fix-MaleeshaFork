@@ -116,10 +116,10 @@ function ViewCourse() {
                         <span className='view-content-details-con-2-topic-text'>Course Content</span>
                     </div>
                     <div className='view-content-details-con-2-contents'>
-                    {courseContents.map((content, index) => (
-                       <div className='view-content-list' key={content.id || index}>
-                       
-                            <div className='view-content-list-item' >
+                    
+                       <div className='view-content-list' >
+                       {courseContents.map((content, index) => (
+                            <div className='view-content-list-item' key={content.id || index} >
                                 <div className='view-content-list-item-image' >
                                 <iframe
                                     style={{ width: '100%', height: '100%' }}
@@ -137,9 +137,9 @@ function ViewCourse() {
                                 
                                 
                             </div>
-                        
+                        ))}
                        </div>
-                       ))}
+                       
                     </div>
             </div>
             
