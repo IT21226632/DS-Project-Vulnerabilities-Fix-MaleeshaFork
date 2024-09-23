@@ -37,7 +37,7 @@ function Inquiries() {
 			) : (
 				<div className="inquiry-partition-canvas">
 					{inquiries.map((inquiry) => {
-						return <span>{inquiry.topic}</span>;
+						return <span key={inquiry.id}>{inquiry.topic}</span>;
 					})}
 				</div>
 			)}
