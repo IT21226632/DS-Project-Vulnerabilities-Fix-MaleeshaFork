@@ -6,6 +6,7 @@ const cors = require("cors");
 const errorHandler = require("./middlewares/errorMiddleware");
 const connectDB = require("./config/connectDb");
 const verifyJWT = require("./middlewares/verifyJWTMiddleware");
+const helmet = require('helmet');
 
 connectDB();
 const app = express();
@@ -33,6 +34,12 @@ app.use(
 
 app.use(verifyJWT);
 app.use(errorHandler);
+
+// Use helmet to set security-related headers
+app.use(helmet());
+
+// Enable the X-Frame-Options header to prevent clickjacking
+app.use(helmet.frameguard({ action: 'deny' }));
 
 let serverPromise = new Promise((resolve, reject) => {
   mongoose.connection.once("open", () => {
