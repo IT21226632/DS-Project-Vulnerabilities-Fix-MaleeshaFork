@@ -6,7 +6,7 @@ const cors = require("cors");
 const errorHandler = require("./middlewares/errorMiddleware");
 const connectDB = require("./config/connectDb");
 const verifyJWT = require("./middlewares/verifyJWTMiddleware");
-const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
+
 
 connectDB();
 const app = express();

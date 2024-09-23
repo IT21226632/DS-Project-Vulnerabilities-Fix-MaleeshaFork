@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-const sendConfirmationEmail = async (course_id, user_id) => {
+const sendConfirmationEmail = async (course_id) => {
   try {
     
     await transporter.sendMail({

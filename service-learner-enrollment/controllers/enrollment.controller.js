@@ -1,6 +1,5 @@
 const enrollmentModel = require("../models/enrollment.model");
-const emailService = require('../services/emailService');
-const smsService = require('../services/smsService');
+
 
 const courseModel = require("../models/course.model");
 // create enrollment

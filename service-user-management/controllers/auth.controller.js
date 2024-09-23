@@ -47,7 +47,7 @@ const loginUser = async (req, res) => {
       const refresh_token = generateRefreshToken(foundUser);
 
       foundUser.refresh_token = refresh_token;
-      const result = await foundUser.save();
+      
 
       res.cookie("jwt", refresh_token, {
         httpOnly: true,

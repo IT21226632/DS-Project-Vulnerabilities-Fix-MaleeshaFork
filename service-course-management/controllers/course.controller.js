@@ -4,7 +4,7 @@ const ContentModel = require("../models/Content.model");
 const asyncHandler = require("express-async-handler");
 
 const createCourse = asyncHandler(async (req, res) => {
-    const { courseId, courseName, courseImage, specialization , courseDescription , coursePrice , courseContent , skills , courseStatus , userId } = req.body;
+    const { courseId, courseName, courseImage, specialization , courseDescription , coursePrice , courseContent , skills , userId } = req.body;
 
     try {
         // Create Content first

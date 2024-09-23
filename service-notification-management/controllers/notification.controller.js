@@ -1,4 +1,4 @@
-const courseEnrollment = require('../models/enrollment');
+
 const emailService = require('../services/emailService');
 const smsService = require('../services/smsService');
 const Notification = require('../models/notification');
@@ -30,7 +30,7 @@ const sendEmail = async (req, res) => {
 const sendEmailsAll = async (req, res) => {
   try {
     
-    const { recipientEmail, subject, text } = req.body;
+    const { subject, text } = req.body;
 
     const newNotification = new Notification({
       message: text,
@@ -79,7 +79,7 @@ const sendSMS = async (req, res) => {
 
 const sendSMSAll = async (req, res) => {
   try {
-    const { recipientPhoneNo, message } = req.body;
+    const { message } = req.body;
 
     const newNotification = new Notification({
       message: message,

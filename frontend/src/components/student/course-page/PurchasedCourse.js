@@ -5,7 +5,7 @@ import { FaDollarSign } from "react-icons/fa";
 import { FaRegCirclePlay } from "react-icons/fa6";
 
 
-import { useNavigate } from "react-router-dom";
+
 
 
 import "./ViewCourse.css";
