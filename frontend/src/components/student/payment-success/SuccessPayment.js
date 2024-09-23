@@ -15,7 +15,7 @@ function SuccessPayment() {
 
   useEffect(() => {
     if (items !== null && items.length > 0 && user_id !== null) {
-      items.map((course) => {
+      items.forEach((course) => {
         enrollToCourse(course._id, user_id);
       });
     }
