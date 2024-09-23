@@ -13,7 +13,6 @@ import './ViewCourse.css'
 function ViewCourse() {
 
     let {id} = useParams();
-    const navigate = useNavigate();
 
     const [course, setCourse] = useState();
     const [courseImage, setCourseImage] = useState();

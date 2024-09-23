@@ -12,7 +12,7 @@ import "./ViewCourse.css";
 
 function PurchasedCourse() {
   let { id } = useParams();
-  const navigate = useNavigate();
+  
 
   const [course, setCourse] = useState();
   const [courseImage, setCourseImage] = useState();
