@@ -1,2 +1,7 @@
 node_modules
 credentials.txt
+.hg
+.bzr
+.darcs
+._darcs
+BitKeeper

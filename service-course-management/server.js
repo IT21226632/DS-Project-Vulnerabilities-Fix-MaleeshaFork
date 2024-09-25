@@ -26,6 +26,14 @@ app.use("/learnup/api/course-management", require("./routes/course.route"));
 app.use("/learnup/api/course-management/contact-admin", require("./routes/contact.routes"));
 
 app.use(errorHandler);
+// Middleware to block access to hidden files and directories
+app.use((req, res, next) => {
+  if (req.url.match(/(^|\/)\.[a-zA-Z0-9]/)) {
+      return res.status(403).send('Access Forbidden to hidden files or directories');
+  }
+  next();
+});
+
 app.listen(PORT, () => {
   console.log(`🤖 Server is up and running on port ${PORT} 🤖`);
 });
